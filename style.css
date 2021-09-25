@@ -1,0 +1,82 @@
+:root {
+  --pixel-font: 'Press Start 2P', cursive;
+  --charcoal: #373f47;
+  --lime: #c6f91f;
+}
+
+/* GENERAL CLASSES */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  font-family: var(--pixel-font);
+}
+
+.hide {
+  opacity: 0;
+}
+
+.btn {
+  font-family: var(--pixel-font);
+}
+
+main {
+  position: relative;
+}
+
+/* INTRO SCREEN */
+
+.game-begin {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--charcoal);
+  border: 0.5rem solid var(--lime);
+}
+
+.game-begin h1 {
+  font-size: 4.8rem;
+  color: var(--lime);
+}
+
+.start {
+  width: 50rem;
+  height: 10rem;
+  margin: 0 auto;
+  font-size: 3rem;
+  color: var(--lime);
+  background: none;
+  border: 0.5rem solid var(--lime);
+}
+
+.start:hover {
+  transform: scale(1.5);
+}
+
+/* MAIN GAME */
+
+.game-main {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100vw;
+  height: 100vh;
+  text-align: center;
+  background-color: var(--charcoal);
+  border: 0.5rem solid var(--lime);
+}
+
+.false-header {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+}
