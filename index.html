@@ -20,22 +20,27 @@
         <button class="btn start">Start</button>
       </section>
       <section class="game-main">
-        <div class="false-header">
-          <h2>Guess!</h2>
-          <p>Number is between 1 and 20!</p>
-          <div>?</div>
-        </div>
         <div class="first-cont">
-          <p></p>
-          <p></p>
+          <h2>Guess!</h2>
+          <p class="range">(Number is between 1 and 20)</p>
+          <div class="number-cont">
+            <div class="sign-animation">?</div>
+            <div class="number">?</div>
+            <div class="sign-animation">?</div>
+          </div>
         </div>
         <div class="second-cont">
-          <p>?</p>
+          <div class="left">
+            <p class="lives">Lives:15</p>
+            <p class="hint">Too low or high</p>
+          </div>
           <input type="number" class="input" />
-          <p>?</p>
+          <div>
+            <p class="message">'Too low or high'</p>
+          </div>
         </div>
         <div class="third-cont">
-          <button></button>
+          <button>Try your luck!</button>
         </div>
       </section>
     </main>
