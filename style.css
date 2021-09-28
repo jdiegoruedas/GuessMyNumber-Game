@@ -23,6 +23,11 @@ html {
   z-index: -1;
 }
 
+.win-style {
+  background-color: green;
+  color: black;
+}
+
 .btn {
   font-family: var(--pixel-font);
 }
@@ -33,7 +38,8 @@ main {
 
 /* INTRO SCREEN */
 
-.game-begin {
+.game-begin,
+.game-restart {
   position: absolute;
   display: flex;
   flex-direction: column;
@@ -124,6 +130,15 @@ main {
   font-size: 5rem;
   border-radius: 50%;
   color: white;
+}
+
+.rotate {
+  animation: rotate 1.5s linear infinite;
+}
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
 }
 
 .second-cont {
