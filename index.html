@@ -15,7 +15,7 @@
   </head>
   <body>
     <main>
-      <section class="game-begin hide">
+      <section class="game-begin">
         <h1>Guess My Number!</h1>
         <button class="btn start">Start</button>
       </section>
@@ -32,20 +32,17 @@
         <div class="second-cont">
           <div class="left">
             <p class="lives">Lives:15</p>
-            <p class="hint">Too low or high</p>
           </div>
-          <input type="number" class="input" />
+          <input type="number" class="input" min="1" max="20" />
           <div>
-            <p class="message">'Too low or high'</p>
+            <p class="message"></p>
           </div>
         </div>
         <div class="third-cont">
-          <button>Try your luck!</button>
+          <button class="check">Try your luck!</button>
         </div>
       </section>
     </main>
-    <footer>
-      <p></p>
-    </footer>
   </body>
+  <script src="./main.js"></script>
 </html>
